@@ -1,0 +1,16 @@
+.catering-section {
+    @include flex;
+    flex-wrap: nowrap;
+   // justify-content: center;
+    &__container {
+        max-width: 880px + $offset * 2;
+        margin: 0 auto;
+        padding: 75px $offset 80px;
+    }
+    &__button {
+        background-color: $BLACK;
+        margin-bottom: 29px;
+        color: $WHITE;
+        text-transform: uppercase;
+    }
+}

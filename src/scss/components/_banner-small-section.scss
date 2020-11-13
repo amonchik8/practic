@@ -1,0 +1,28 @@
+.banner-small-section {
+    background-color: $BLACK;
+    @include flex;
+    &__banner {
+        @include flex(center, center, row);
+        background-color: $BLACK;
+    }
+    &__content {
+        display: flex;
+        justify-content: flex-end;
+        padding: 55px 60px;
+    }
+    &__column {
+        flex-basis: 50%;
+    }
+    &__title {
+        @include text($H50, 400, $WHITE);
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+    &__image {
+        background-image: url(../assets/images/features-banner.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}

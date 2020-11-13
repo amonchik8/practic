@@ -1,0 +1,5 @@
+.content {
+    @include flex(flex-start, flex-start, column);
+    flex-basis: 50%;
+    background-color: $BLACK;
+}

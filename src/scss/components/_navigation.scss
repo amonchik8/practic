@@ -1,0 +1,12 @@
+.navigation {
+    @include flex(space-between, row, wrap);
+    &__list {
+        @include flex(space-between, center, row);
+        flex-basis: 33.333%;
+        margin-top: -13px;
+    }
+    &__item {
+        
+        
+    }
+}

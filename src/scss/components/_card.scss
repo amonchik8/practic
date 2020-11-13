@@ -1,0 +1,16 @@
+.card {
+    @include flex(flex-start, flex-start, column);
+    flex-basis: 25%;
+    &__image {
+        margin-bottom: 25px;
+    }
+    &__title {
+        max-width: 121px;
+        margin-bottom: 36px;
+        text-transform: uppercase;
+    }
+    &__description {
+        max-width: 184px;
+        margin-bottom: 32px;
+    }
+}

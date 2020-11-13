@@ -1,0 +1,9 @@
+.features-section {
+    display: flex;
+    flex-wrap: wrap;
+    &__container {
+        max-width: 846px + $offset * 2;
+        padding: 50px $offset;
+        margin: 0 auto;
+    }
+}

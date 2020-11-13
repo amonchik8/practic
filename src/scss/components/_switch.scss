@@ -1,0 +1,49 @@
+.switch {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    margin-right: 10px;
+    &__wrapper {
+        display: flex;
+        max-width: 1366px + $offset * 2;
+        margin: 0 auto;
+        padding: $offset;
+        background-color: darkslategray;
+    }
+    &__box {
+        @include flex(flex-start, center);
+        width: 64px;
+        height: 30px;
+        border: 4px solid grey;
+        background-color: grey;
+        border-radius: 30px;
+        transition-property: border-color, background-color;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+        
+    }
+    &__dot {
+        @include size(24px);
+        display: block;
+        background-color: $WHITE;
+        border-radius: 50%;
+        transform: translateX(0);
+        transition: transform 0.2s ease;
+    }
+    &__input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        visibility: hidden;
+        left: 4px;
+        top: 4px;
+        &:checked + .switch__box {
+            background-color: lightgreen;
+            border-color: lightgreen;
+            .switch__dot {
+                transform: translateX(60px - 28px);
+            }
+
+        }
+    }
+}

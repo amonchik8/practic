@@ -1,0 +1,34 @@
+.banner-section {
+    background-color: $BLACK;
+    @include flex;
+    &__column {
+        flex-basis: 50%;
+    }
+    &__content {
+        padding: 75px 0 75px 60px;
+    }
+    &__title {
+        max-width: 200px;
+        @include text($H50, 400, $WHITE);
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    &__description {
+        max-width: 303px;
+        @include text($H15, 400, $WHITE);
+        line-height: 1.66;
+        margin-bottom: 50px;
+    }
+    &__button {
+        background-color: $WHITE;
+        margin-right: 14px;
+    }
+    &__image {
+        background-image: url(../assets/images/banner-image.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}

@@ -1,0 +1,11 @@
+.logo {
+    margin: 13px 0 20px;
+    &__wrapper {
+        margin-top: -20px;
+        @include flex(center, center, column);
+        flex-basis: 33.333%;
+    }
+    &__description {
+        display: block;
+    }
+}

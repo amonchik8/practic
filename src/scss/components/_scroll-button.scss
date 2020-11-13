@@ -1,0 +1,23 @@
+.scroll-button {
+    width: 24px;
+    height: 38px;
+    border-radius: 20px;
+    border: 2px solid $WHITE;
+    position: relative;
+    align-self: center;
+    @include flex(flex-start, center, column);
+    &:after {
+        position: absolute;
+        top: 8px;
+        display: block;
+        content: '';
+        @include size(4px, true);
+        background-color: $WHITE;
+        @include transition(top);
+    }
+    &:active {
+        &:after {
+            top: 20px;
+        }
+    }
+}

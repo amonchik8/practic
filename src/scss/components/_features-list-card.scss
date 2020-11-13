@@ -1,0 +1,27 @@
+.features-list-card {
+    @include flex(flex-start, flex-start, row);
+    flex-basis: 50%;
+    &:not(:last-of-type) {
+        margin-bottom: 29px;
+    }
+    &__icon-wrapper {
+        width: 100px;
+        height: 100px;
+        background-color: $BLACK;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 13px;
+    }
+    &__icon {
+        width: 49px;
+        height: 70px;
+    }
+    &__content {
+        @include flex(space-between, flex-start, column);
+        height: 100px;
+    }
+    &__description {
+        max-width: 288px;
+    }
+}
